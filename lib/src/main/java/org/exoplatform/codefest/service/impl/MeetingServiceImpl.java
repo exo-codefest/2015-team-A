@@ -116,7 +116,7 @@ public class MeetingServiceImpl implements MeetingService {
     Node rootNode = session.getRootNode();
     Calendar calendar = Calendar.getInstance();
     String meetingYear = String.valueOf(calendar.get(Calendar.YEAR));
-    String meetingMonth = String.valueOf(calendar.get(Calendar.MONTH)) + 1;
+    String meetingMonth = String.valueOf(calendar.get(Calendar.MONTH) + 1);
 
     if (!rootNode.hasNode(EXO_MEETING_DRIVE)) {
       rootNode.addNode(EXO_MEETING_DRIVE);
