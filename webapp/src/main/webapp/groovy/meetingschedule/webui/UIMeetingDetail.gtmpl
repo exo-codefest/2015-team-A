@@ -148,7 +148,7 @@
 <div class="uiBox">
 	<h5 class="title"><i class="uiIconClock  uiIconDarkGray"></i> <%=meeting.getTitle()%></h5>
 	<div class="uiContentBox">
-        <% if (status != 1) {%>
+
 		<table class="uiGrid table table-hover table-striped table-metting-vote">
 			<thead>
 				<tr>
@@ -169,7 +169,7 @@
                 <%
                 for(String user : meeting.getParticipant()) {
                     def isVotedInMeeting = meeting.isVoted(user);
-                    if (user == currentUser && meeting.getStatus() != 1) {%>
+                    if (user == currentUser && status != 1) {%>
                         <tr class="me">
                             <td headers="tablecol_member"><strong><%=user%></strong></td>
                             <%for(TimeOption opt : meeting.getTimeOptions()) {
@@ -213,7 +213,7 @@
 			</tbody>
 			<!-- tfoot only show for ad -->
             <%
-                if (currentUser == owner) {%>
+                if (currentUser == owner && status == 1) {%>
                     <tfoot>
                     <tr>
                         <td headers="tablecol_member" class="right"><strong>Select time to meeting</strong></td>
@@ -226,7 +226,7 @@
                             checked = "checked=\"checked\"";
                             }
                             def disabled = "";
-                            if (meeting.getStatus() == 1) {
+                            if (status == 1) {
                             disabled = "disabled";
                             }
                         %>
@@ -243,7 +243,7 @@
             %>
 		</table>
 		<hr>
-        <%}%>
+        <!--end of table -->
 		<div class="row-fluid detail-meeting">
 			<div class="span9">
 				<form class="form-horizontal">
