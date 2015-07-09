@@ -124,8 +124,8 @@ import org.exoplatform.codefest.utils.Utils;
                             <a href="#" data-placement="bottom" rel="tooltip" class="actionIcon" data-original-title="Delete"><i class="uiIconDelete"></i></a>
                         </td>
                     </tr>
-                </tbody>
                 <%} }%>
+                </tbody>
             </table>
             <table id="pending-grid-view" class="uiGrid table table-hover table-striped table-metting card-view" style="display: none;">
                 <thead>
@@ -445,8 +445,8 @@ import org.exoplatform.codefest.utils.Utils;
                             <a href="#" data-placement="bottom" rel="tooltip" class="actionIcon" data-original-title="Delete"><i class="uiIconDelete"></i></a>
                         </td>
                     </tr>
-                </tbody>
                 <%} }%>
+                </tbody>
             </table>
         </div>
                 <!-- TAB 3 -->
@@ -540,8 +540,8 @@ import org.exoplatform.codefest.utils.Utils;
                             <a href="#" data-placement="bottom" rel="tooltip" class="actionIcon" data-original-title="Delete"><i class="uiIconDelete"></i></a>
                         </td>
                     </tr>
-                </tbody>
                 <%} }%>
+                </tbody>
             </table>
         </div>
     </div>
