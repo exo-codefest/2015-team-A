@@ -213,7 +213,7 @@
 			</tbody>
 			<!-- tfoot only show for ad -->
             <%
-                if (currentUser == owner && status == 1) {%>
+                if (currentUser == owner && status != 1) {%>
                     <tfoot>
                     <tr>
                         <td headers="tablecol_member" class="right"><strong>Select time to meeting</strong></td>
